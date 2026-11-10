@@ -23,7 +23,7 @@ print(df.shape)
 print(df.info())
 
 
-print(df.describe()
+print(df.describe())
 
 
 df = df.drop(['Unnamed: 0', 'key'], axis=1)
