@@ -141,24 +141,23 @@ print("RMSE:", rmse_rf)
 print("MAE:", mae_rf)
 
 
-results = pd.DataFrame({    
-    'Model': [        
-	'Linear Regression',        
-	'Random Forest'    
-    ],        
-    'R2': [        
-	r2_lr,
+# Model Comparison
+results = pd.DataFrame({
+    'Model': [
+        'Random Forest'
+    ],
+    'R2': [
         r2_rf
     ],
-       'RMSE': [
-        rmse_lr,
+    'RMSE': [
         rmse_rf
     ],
-        'MAE': [
-        mae_lr,
+    'MAE': [
         mae_rf
-    ] })
- print("\n==============================")
- print("MODEL COMPARISON")
- print("==============================") 
- print(results.to_string(index=False))
+    ]
+})
+print("\n==============================")
+print("       MODEL COMPARISON")
+print("==============================")
+
+print(results.to_string(index=False))
